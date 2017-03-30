@@ -1,0 +1,40 @@
+1 Needs for hive:
+
+  now a days most of the data ware house applications are implementing using rdms which use sql query language 
+  so to process the data  in the hdfs we need hive.hive quring language is same as that of sql
+=========================================================================================================================
+2)Is Hive suitable to be used for OLTP systems? Explain in brief:
+  no hive is not suitable for oltp systems since it deals with huge amount of data insert and update is not provided
+===================================================================================================================================
+
+3)What is a metastore in Hive?:
+
+  The Hive metastore service stores the metadata for Hive tables and partitions in a relational database,
+ and provides clients  access to this information using the metastore service API
+==============================================================================================================================================================================================
+
+
+4)Can we run unix shell commands from hive?
+   yes it is possible to run unix shell commands form hive
+
+  dfs-ls -to list the content in hdfs
+  dfs-rmr - to removes the files and subdirectories
+  dfs-cat -tp print the conent of the file in terminal
+  dfs-mv -to move the file from one location to another location
+  dfs-mkdir-to create an directory
+
+
+
+===========================================================================================================================
+
+
+5)Hive can process any type of data formats? Explain in brief:
+  
+  A SerDe allows Hive to read in data from a table, and write it back out to hdfs in any custom format. 
+  Anyone can write their own SerDe for their own data formats.
+  SerDe is short for Serializer/Deserializer. Hive uses the SerDe interface for IO.
+  the interface handles both serialization and deserialization and also interpreting
+  the results of serialization as individual fields for processing
+=========================================================================================
+
+
